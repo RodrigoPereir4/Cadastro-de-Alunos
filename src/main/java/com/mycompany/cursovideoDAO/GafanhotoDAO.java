@@ -52,7 +52,7 @@ public class GafanhotoDAO {
     
     public void CadastrarGafanhoto(GafanhotoDTO objGafanhotoDTO){
         
-        String sql = "insert into gafanhotos (nome,profissao,peso,altura,sexo,nacionalidade) values (?,?,?,?)";
+        String sql = "insert into gafanhotos (nome,profissao,peso,altura,sexo,nacionalidade) values (?,?,?,?,?,?)";
         conexao = ConexaoBancoDadosDAO.conexaoBD();
         
         try {
@@ -62,6 +62,8 @@ public class GafanhotoDAO {
             pstm.setString(2, objGafanhotoDTO.getProfissao());
             pstm.setDouble(3, objGafanhotoDTO.getPeso());
             pstm.setDouble(4, objGafanhotoDTO.getAltura());
+            pstm.setString(5, objGafanhotoDTO.getSexo());
+            pstm.setString(6, objGafanhotoDTO.getNacionalidade());
             
             pstm.execute();
             pstm.close();

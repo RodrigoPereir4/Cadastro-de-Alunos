@@ -343,6 +343,9 @@ public class CadastrarAlunoVIEW extends javax.swing.JFrame {
             
             GafanhotoDAO cadastrar = new GafanhotoDAO();
             cadastrar.CadastrarGafanhoto(objGafanhotoDTO);
+            
+            JOptionPane.showMessageDialog(rootPane, "Cadastro realizado!");
+            this.dispose();
         }
     }
 }
