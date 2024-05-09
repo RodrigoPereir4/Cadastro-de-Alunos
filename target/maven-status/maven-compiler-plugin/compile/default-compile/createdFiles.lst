@@ -1,8 +1,13 @@
+com\mycompany\cursovideoDTO\AdminDTO.class
+com\mycompany\cursovideoDTO\GafanhotoDTO.class
+com\mycompany\cursovideoVIEW\CadastrarAlunoVIEW$1.class
+com\mycompany\cursovideoVIEW\CadastrarAlunoVIEW$2.class
+com\mycompany\cursovideoVIEW\LoginAdminVIEW$1.class
 com\mycompany\cursovideoVIEW\CadastrarAlunoVIEW.class
 com\mycompany\cursovideoDAO\GafanhotoDAO.class
-com\mycompany\cursovideoDTO\GafanhotoDTO.class
 com\mycompany\cursovideoVIEW\CadastrarAlunoVIEW$3.class
+com\mycompany\cursovideoVIEW\LoginAdminVIEW.class
 com\mycompany\cursovideoDAO\ConexaoBancoDadosDAO.class
-com\mycompany\cursovideoVIEW\CadastrarAlunoVIEW$1.class
+com\mycompany\cursovideoVIEW\CadastrarAlunoVIEW$5.class
 com\mycompany\cursovideoVIEW\CadastrarAlunoVIEW$4.class
-com\mycompany\cursovideoVIEW\CadastrarAlunoVIEW$2.class
+com\mycompany\cursovideoVIEW\LoginAdminVIEW$2.class

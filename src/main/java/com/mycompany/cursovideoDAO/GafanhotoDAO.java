@@ -1,5 +1,6 @@
 package com.mycompany.cursovideoDAO;
 
+import com.mycompany.cursovideoDTO.AdminDTO;
 import com.mycompany.cursovideoDTO.GafanhotoDTO;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -71,5 +72,26 @@ public class GafanhotoDAO {
         } catch (SQLException ex) {
              JOptionPane.showMessageDialog(null, "CadastroGafanhotoDAO " + ex);
         }
+    }
+    
+    public ResultSet autenticarLogin(AdminDTO adminDTO){
+        
+        conexao = ConexaoBancoDadosDAO.conexaoBD();
+   
+        try {
+             String sql = "Select * from admin where nome = ? and senha = ?";
+           
+            pstm = conexao.prepareStatement(sql);
+            pstm.setString(1, adminDTO.getNome());
+            pstm.setString(2, adminDTO.getSenha());
+            
+            ResultSet rs = pstm.executeQuery();
+            return rs;
+            
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Erro em autenticar o LOGIN NO DAO");
+            return null;
+        }
+        
     }
 }
